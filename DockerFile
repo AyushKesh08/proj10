@@ -1,9 +1,9 @@
 FROM eclipse-temurin:17-jdk
-
+‌
 COPY target/proj10.jar /user/app/
-
+‌
 WORKDIR /user/app/
-
-EXPOSE 8989
-
-ENTRYPOINT [ "java", "-jar", "dockerProj.jar" ]
+‌
+EXPOSE 9090
+‌
+ENTRYPOINT [ "java", "-jar", "proj10.jar" ]
